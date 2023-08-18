@@ -1,0 +1,13 @@
+.user-name {
+    opacity: .8;
+    font-weight: bold;
+    font-size: 0.88rem;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.user-profile-name {
+    text-align: left;
+    font-size: 0.8rem;
+    opacity: .5;
+}

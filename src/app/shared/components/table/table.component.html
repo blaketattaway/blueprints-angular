@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th *ngFor="let header of tableResult?.columns">
+                {{ header.name }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngIf="tableResult?.collection?.length === 0; else rows">
+            <td colspan="header.length">
+                {{ tableResult?.noInfoText }}
+            </td>
+        </tr>
+        <ng-template #rows>
+            <tr *ngFor="let element of tableResult?.collection">
+                <td *ngFor="let column of tableResult?.columns">
+                    {{ getValue(element, column.key) }}
+                </td>
+            </tr>
+        </ng-template>
+    </tbody>
+</table>

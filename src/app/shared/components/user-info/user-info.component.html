@@ -1,0 +1,16 @@
+<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown"
+    aria-expanded="true">
+    <shared-user-miniature [userName]="userName"></shared-user-miniature>
+    <div style="display:inline-block;" class="ms-3">
+        <div class="user-name">
+            {{ userName }}
+        </div>
+        <div class="user-profile-name">
+            {{ profileName }}
+        </div>
+    </div>
+</a>
+<ul class="dropdown-menu text-small" data-popper-placement="bottom-end"
+    style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 34px);">
+    <li><a class="dropdown-item" href="#">Sign out</a></li>
+</ul>

@@ -1,0 +1,17 @@
+.avatar {
+    border: #fff solid 3px;
+    overflow: hidden;
+    font-family: 'Lato';
+    font-weight: bolder;
+    width: 44px;
+    height: 44px;
+    transition: all .2s;
+    opacity: 1;
+    border-radius: 50px;
+    color: #212529;
+    background-color: #eeeeee;
+    justify-content: center !important;
+    display: flex;
+    font-size: 18px;
+    padding-top: 6px;
+}
